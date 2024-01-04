@@ -1,4 +1,4 @@
-# Varianta A - pocitejme, ze 0 je cislo kladne.
+# Varianta A - pocitejme, ze 0 je cislo kladne. / takze vlastne isNonNegative, ale budiz :)
 
 def isPositive(n):
     if n >= 0:
@@ -11,6 +11,7 @@ print(isPositive(0))
 print(isPositive(5))
 
 # Varianta B
+
 import turtle
 
 def drawTriangle(length):
@@ -35,7 +36,7 @@ def findDuplicates(words):
         else:
             uniqueWords.append(word)
     
-    return list(set(duplicates)) # odstranuje duplicity v duplicitach
+    return list(set(duplicates)) # odstranuje duplicity v duplicitach, asi by slo proste setnout uz prvotni uniqueWords, ale na to jsem extremne lina to ted prepisovat :D
 
 words = ["Green", "Blue", "Red", "Blue", "Yellow", "Blue", "Red"]
 print(findDuplicates(words))
